@@ -15,6 +15,11 @@ for i in range(len(lines)):
         instruction_start = i
         break
     else:  # construct lists of elements
+
+    # SO THIS IS DEFINITELY BAD: try to implement this??
+    # locations = [i for i in range(len(line)) if line[i].isupper()]
+    # for l in locations:
+        # stacks[l].append(line[l])
         print(line)
         if len(line) > 1:  # first column
             if line[1] != ' ':
